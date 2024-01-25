@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loco.css">  <!--adding loco css file-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="minicircle">  </div>
+
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <a href="#">Lakshya</a>
+                <h4>MENU+</h4>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="boundingelem">FRONTEND</h1>
+                </div>
+                <div class="blocktext">
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="secondh1">ENGINEER</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">COMPUTER ENGINEERING (DTU)</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="chhotiheadings">
+                <div class="bounding">
+                    <h5 class="boundingelem">available for freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">work from may 23'</h5>
+                </div>
+            </div>
+            <div id="herofooter">
+                <a href="https://www.linkedin.com/in/lakshya-99b8b029b/">linkedin<i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://drive.google.com/file/d/1cFDMXM_PDHql_BwvwwgarxIkhvWfU6Ta/view?usp=drive_link">My Resume<i class="ri-arrow-right-up-line"></i></a>
+                <a href="https://github.com/LAKSHYADTU">Github</a>
+            </div>
+        </div>
+        <div id="second">
+            <div class="elem">
+                <img src="dtu.jpeg" alt="">
+                <h1>DTU</h1>
+                <h5>2021 - 2025</h5>
+            </div>
+            <div class="elem">
+                <img src="ghps.jpeg" alt="">
+                <h1>GHPS</h1>
+                <h5>2018 - 2020</h5>
+            </div>
+            <div class="elem elemlast">
+                <img src="gsbv.png" alt="">
+                <h1>GSBV</h1>
+                <h5>2009 - 2017</h5>
+            </div>
+        </div>
+        <div id="about">
+            <img src="photo.jpeg" alt="">
+            <div id="textabout">
+                <h5>(About me)</h5>
+                <p>I'm a computer engineering student with a strong foundation in programming solved over 400+ coding question
+                   on different website like (LEETCODE , CODESTUDIO , GFG , CODECHEF) and have keen interest in web development
+                   and software design. Currently I am pursuing my B.Tech at Delhi Technological University , I secured a percentile 
+                   of 94.51% in JEE MAINS 2021.
+                </p>
+                <a href="https://www.linkedin.com/in/lakshya-99b8b029b/">Let's talk</a>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h5>(forgot to mention)</h5>
+            <a href="https://www.quora.com/profile/Lakshya-597">follow me on Quora</a><i class="ri-arrow-right-up-line"></i>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <h5>2023 &copy;</h5>
+                <h5>0:05 AM EST</h5>
+            </div>
+            <div id="footerright">
+                <a href="https://leetcode.com/LAKSHYADTU/">Leetcode</a><a href="https://www.codingninjas.com/studio/profile/05c91731-8242-4b55-86f4-d84c25c1c1d3">Coding Ninjas Studio</a><a href="https://auth.geeksforgeeks.org/user/lakshya4519e/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">GFG</a><a href="https://www.codechef.com/users/lakshya072002">Codechef</a>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    SMOOTH SCROLLING
+        -> attach loco scroll css
+        -> attach locomotive scroll min js
+        ->some code from loco github for js
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>  <!--adding locomotive js script--> <!--chrome : locomotive js cdn -> locomotive-scroll.min.js -> copy url-->
+    <script src="script.js"></script>  <!--adding script js-->  <!--adding this will reflect some changes
+                                                                    ->scrollbar not shows up(transparent)
+                                                                    ->a thin line shows up b/w div elemenst : resolve using giving main bg color : black-->
+    <!--
+        GSAP : 
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"  
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <!--src : chrome : gsap cdn -> copy first link
+                                                                            -->
+</body>
+
+</html>
