@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        #wrapper{
+            height: 100vh;  /*maxm height of viewport :100vh*/
+            overflow-y: auto;
+            overflow-x: hidden;
+            perspective: 10px;
+        }
+
+        .container{
+            position: relative;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            transform-style:preserve-3d;
+            z-index: -1;
+        }
+
+        .background , .foreground{
+            position: absolute;  /*used for overlapping*/
+            height: 100%;
+            width: 100%;
+            object-fit: cover;  /*stretch image in such a way that image looks good*/
+            z-index: -1;  /*used for layering*/
+        }
+        .background{
+            transform: translateZ(-40px) scale(5);  /*moving background image away*/
+        }
+        .foreground{
+            transform: translateZ(-20px) scale(3);
+        }
+        h1{
+            position: absolute;
+            top: 5rem;
+            font-size: 10rem;
+            letter-spacing: 4px;
+            color: white;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        section{
+            background-color: rgb(45, 45, 45);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .bg1{
+            background-image: url(sport-1.jpg);  /*way to add image*/
+        }
+        .bg2{
+            background-image: url(sport-2.jpg);  /*way to add image*/
+        }
+        .bg3{
+            background-image: url(sport-3.jpg);  /*way to add image*/
+        }
+
+        .secHeading{
+            font-size: 5rem;
+            padding: 0 10rem;
+        }
+        .text{
+            font-size: 1.5rem;
+            padding: 0 10rem;
+            margin: 5rem 0;
+        }
+
+        .bg{
+            position: relative;
+            width: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+        
+        .desc{
+            position:absolute;
+            background-color: white;
+            padding: 0.5rem 2.5rem;
+            top: 50%;
+            left: 50%;
+            transform:translateX(-50%) ;
+            color: black;
+            font-size: 3.5rem;
+            font-weight: 600 ;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <img src="background.png" class="background">
+            <img src="foreground.png" class="foreground">
+            <h1>ADVENTURE</h1>
+        </div>
+    </div>
+    
+    <section>
+        <h2 class="secHeading">Adventure time</h2>
+        <p class="text">
+            Adventure in sports takes enthusiasts beyond conventional boundaries, introducing a realm of thrilling pursuits that elevate adrenaline levels. Extreme sports like base jumping and free solo climbing plunge individuals into daring escapades, defying gravity and embracing fear. Adventure races such as Tough Mudder and Spartan Race transform traditional running into obstacle-laden odysseys, testing both endurance and resilience. Water sports like white water rafting and kiteboarding immerse participants in dynamic aquatic challenges. Urban sports like parkour and urban biking weave daring athleticism through city landscapes, while exploration-focused activities like adventure racing and backcountry skiing beckon adventurers to uncharted terrains. Unconventional sports such as zorbing and bubble soccer inject a playful twist into physical endeavors. Adventure travel sports, like mountain biking tours and surfing expeditions, offer a fusion of athleticism and exploration, turning sports into immersive journeys of discovery.
+        </p>
+
+        <div class="bg bg1">
+            <h2 class="desc">BIKING</h2>
+        </div>
+        <p class="text">
+            Biking transcends mere physical activity; it's an immersive experience, a symphony of wind, wheels, and open roads. Whether cruising city streets or conquering challenging terrains, each pedal revolution propels a sense of freedom and empowerment. The rhythmic cadence of cycling not only fosters physical well-being but also serves as a remedy for stress. It's an eco-friendly journey, a celebration of independence, and a canvas for personal exploration, where the world unfolds with every turn of the wheels, revealing new vistas and adventures.
+        </p>
+
+        <div class="bg bg2">
+            <h2 class="desc">PARAGLIDING</h2>
+        </div>
+        <p class="text">
+            Paragliding is an exhilarating dance with the skies, a harmonious fusion of adrenaline and serenity. Suspended beneath a vibrant wing, adventurers soar like birds, catching thermal updrafts to navigate the open air. The sensation of weightlessness combines with panoramic views, creating an unparalleled sense of freedom. Pilots harness wind currents, steering gracefully through the sky, transcending earthly bounds. From coastal cliffs to mountain peaks, paragliding transforms landscapes into canvases for aerial exploration, offering an unmatched thrill that lingers as an indelible memory of soaring amidst the clouds.
+        </p>
+
+        <div class="bg bg3">
+            <h2 class="desc">SURFING</h2>
+        </div>
+        <p class="text">
+            Surfing is a visceral communion with the ocean's rhythm, a dance on liquid canvases. Riders harness the power of waves, balancing skill and intuition on sleek boards. The salty breeze and the symphony of crashing waves surround surfers as they glide atop the water's surface, seeking that perfect ride. It's a sport that transcends physicality, blending athleticism with a spiritual connection to nature. From dawn patrols to sunset sessions, surfing becomes a transformative experience, where each wave carries the promise of exhilaration and a deep connection to the sea.
+        </p>
+        
+    </section>
+</body>
+</html>
